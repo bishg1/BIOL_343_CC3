@@ -178,7 +178,6 @@ Add a `Year` column and a `Month` column to `all_data` with `mutate()` and the `
 
 ```{r add-year}
 all_data <- all_data %>% mutate(Year = year(Date), Month = month(Date))
-head(all_data)
 ```
 
 ## 10. Summarise concentration by year
@@ -215,7 +214,7 @@ Starting from `all_data`, the four measurement columns you renamed in Section 5 
 
 ```{r pivot-longer}
 
-long_data <- all_data %>% pivot_longer(cols=c(micro_PC1, micro_PC2, urine_PC1, urine_PC2), names_to="Measurement", values_to="Score")
+long_data <- pivot_longer(colc=c(micro_PC1, micro_PC2, urine_PC1, urine_PC2), names_to="Measurement", )
 head(long_data)
 dim(long_data)
 
@@ -224,7 +223,7 @@ dim(long_data)
 Now use `long_data` to draw histograms of `Score` with `facet_wrap()` so that each `Measure` gets its own panel (Chapter 4 and Chapter 7). Choose a sensible `binwidth`, add axis labels and a title, and use `theme_classic()`.
 
 ```{r score-histograms}
-ggplot(aes(x = ovary_area), data = cc1_data) + geom_histogram(binwidth = 1, aes(fill = populationtype, colour = populationtype)) + labs(x = bquote("Ovary Area (mm"^2*")"), y= "Count", title = "Mean Ovary Width of Different Plant Populations") + facet_wrap(vars(populationtype)) + theme_classic()
+
 ```
 
 ## 13. Long to wide

@@ -29,3 +29,7 @@
 {"chunk":null,"ts":"2026-10-01T18:19:50Z","pid":31616,"engine":"r","severity":"error","render":false,"text":"## Error: invalid 'n' - must be numeric, possibly NA."}
 {"chunk":null,"ts":"2026-10-01T18:21:12Z","pid":31616,"engine":"r","severity":"error","render":false,"text":"## Error: invalid 'n' - must be numeric, possibly NA."}
 {"chunk":null,"ts":"2026-10-01T18:22:36Z","pid":31616,"engine":"r","severity":"error","render":false,"text":"## Error: object 'top5' not found"}
+{"chunk":null,"ts":"2026-10-01T23:02:45Z","pid":31616,"engine":"r","severity":"error","render":false,"text":"## Error: object 'micro_PC1' not found"}
+{"chunk":null,"ts":"2026-10-01T23:02:45Z","pid":31616,"engine":"r","severity":"error","render":false,"text":"## Error: \u001b[1m\u001b[22mArguments in `...` must be used.\n\u001b[31m✖\u001b[39m Problematic argument:\n\u001b[36m•\u001b[39m colc = c(micro_PC1, micro_PC2, urine_PC1, urine_PC2)\n\u001b[36mℹ\u001b[39m Did you misspell an argument name?"}
+{"chunk":null,"ts":"2026-10-01T23:03:13Z","pid":31616,"engine":"r","severity":"error","render":false,"text":"## Error: object 'micro_PC1' not found"}
+{"chunk":null,"ts":"2026-10-01T23:03:31Z","pid":31616,"engine":"r","severity":"error","render":false,"text":"## Error: non-numeric argument to binary operator"}

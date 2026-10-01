@@ -224,7 +224,7 @@ dim(long_data)
 Now use `long_data` to draw histograms of `Score` with `facet_wrap()` so that each `Measure` gets its own panel (Chapter 4 and Chapter 7). Choose a sensible `binwidth`, add axis labels and a title, and use `theme_classic()`.
 
 ```{r score-histograms}
-ggplot(aes(x = ovary_area), data = cc1_data) + geom_histogram(binwidth = 1, aes(fill = populationtype, colour = populationtype)) + labs(x = bquote("Ovary Area (mm"^2*")"), y= "Count", title = "Mean Ovary Width of Different Plant Populations") + facet_wrap(vars(populationtype)) + theme_classic()
+geom_histogram(binwidth)
 ```
 
 ## 13. Long to wide
